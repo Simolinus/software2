@@ -175,4 +175,5 @@ def main2():
             break
 
 
+main()
 main2()
