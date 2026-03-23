@@ -35,14 +35,6 @@ class Car:
         self.current_speed = current_speed
         self.travelled_distance = travelled_distance
 
-    # def __str__(self):
-    #     return (
-    #         self.registration,
-    #         self.max_speed,
-    #         self.current_speed,
-    #         self.travelled_distance,
-    #     )
-
     def accelerate(self, speed):
         accel_km_h = speed
         if self.current_speed <= self.max_speed:
