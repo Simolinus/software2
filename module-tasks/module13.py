@@ -47,11 +47,11 @@ def airport_by_icao(icao):
         cursor = connection.cursor()
         cursor.execute(sql, (icao,))
         result = cursor.fetchone()
+        cursor.close()
         if result == None:
             response = {"message": "Invalid icao"}
             return response
         else:
-            cursor.close()
             name = result[0]
             municipality = result[1]
             response = {
